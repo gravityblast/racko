@@ -5,7 +5,7 @@
 
 Gem::Specification.new do |s|
   s.name = %q{racko}
-  s.version = "500.0.0"
+  s.version = "1000.0.0"
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = ["Andrea Franz"]
@@ -19,9 +19,10 @@ Gem::Specification.new do |s|
     "MIT-LICENSE",
     "README",
     "Rakefile",
+    "VERSION",
     "images/racko.png",
-    "init.rb",
-    "lib/rack/o.rb"
+    "lib/rack/o.rb",
+    "racko.gemspec"
   ]
   s.homepage = %q{http://github.com/pilu/racko}
   s.require_paths = ["lib"]
