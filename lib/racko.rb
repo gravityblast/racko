@@ -1,1 +1,1 @@
-require File.dirname(__FILE__) + "/lib/rack/o"
+require File.dirname(__FILE__) + "/rack/o"
