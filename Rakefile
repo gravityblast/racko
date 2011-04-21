@@ -1,23 +1,15 @@
-require 'rake'
-require 'rake/testtask'
-require 'rake/rdoctask'
+require "rubygems"
 
-desc 'Default: run unit tests.'
-task :default => :test
-
-desc 'Test the o plugin.'
-Rake::TestTask.new(:test) do |t|
-  t.libs << 'lib'
-  t.libs << 'test'
-  t.pattern = 'test/**/*_test.rb'
-  t.verbose = true
-end
-
-desc 'Generate documentation for the o plugin.'
-Rake::RDocTask.new(:rdoc) do |rdoc|
-  rdoc.rdoc_dir = 'rdoc'
-  rdoc.title    = 'O'
-  rdoc.options << '--line-numbers' << '--inline-source'
-  rdoc.rdoc_files.include('README')
-  rdoc.rdoc_files.include('lib/**/*.rb')
+begin
+  require 'jeweler'
+  Jeweler::Tasks.new do |gemspec|
+    gemspec.name = "racko"
+    gemspec.summary = "Enables the Racco's power"
+    gemspec.description = "Yes, it enables the Racco's power"
+    gemspec.email = "andrea@gravityblast.com"
+    gemspec.homepage = "http://github.com/pilu/racko"
+    gemspec.authors = ["Andrea Franz"]
+  end
+rescue LoadError
+  puts "Jeweler not available. Install it with: sudo gem install technicalpickles-jeweler -s http://gems.github.com"
 end
