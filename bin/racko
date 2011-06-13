@@ -1,0 +1,17 @@
+#!/usr/bin/env ruby
+# coding: utf-8
+
+
+if `which say 2> /dev/null` and $?.success?
+  racko_command = lambda {`say -v Albert 'Rah, cko!'`}
+else
+  racko_command = lambda {
+    print 'RACK'
+    $stdout.flush
+    sleep 0.4
+    puts '-O!'
+    sleep 0.8
+  }
+end
+
+10.times { racko_command.call }
