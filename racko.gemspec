@@ -5,13 +5,15 @@
 
 Gem::Specification.new do |s|
   s.name = %q{racko}
-  s.version = "50000.0.0"
+  s.version = "50000.0.1"
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = ["Andrea Franz"]
-  s.date = %q{2011-04-21}
+  s.date = %q{2011-06-13}
+  s.default_executable = %q{racko}
   s.description = %q{Yes, it enables the Racco's power}
   s.email = %q{andrea@gravityblast.com}
+  s.executables = ["racko"]
   s.extra_rdoc_files = [
     "README"
   ]
@@ -20,6 +22,7 @@ Gem::Specification.new do |s|
     "README",
     "Rakefile",
     "VERSION",
+    "bin/racko",
     "images/racko.png",
     "lib/rack/o.rb",
     "lib/racko.rb",
